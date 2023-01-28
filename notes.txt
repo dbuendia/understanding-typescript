@@ -1,0 +1,34 @@
+Todo lo que hay está basado de momento en: https://www.youtube.com/watch?v=d56mG7DezGs&t=15s
+
+Ejecutar el código:
+tsc
+node dist/index.js
+
+Typescript:
+
+What is typescript?
+
+Un superset de JavaScript. Básicamente javascript con type checking.
+
+- A language that builds up on javascript.
+- Adds new features y advantadges.
+- No se puede ejecutar en el browser. Node.js tampoco.
+- Es el compilador el que nos avisará en development time, de los posibles errores.
+
+- El ts se transpila a js al final (que es lo que debemos importar como script)
+- TS permite escribir de manera más sencilla cosas que luego se traducen a un script de js más complejo.
+
+- Por supuesto es fuertemente tipado lo cual supone extra error checking en development time antes de que pasen en el runtime.
+
+Para crear el tsconfig.json hay que:
+
+tsc --init
+
+Es importante descomentar
+
+"rootDir": "./src", (añadir src)
+"outDir": "./dist", (añadir dist)
+
+Para que los archivos transpilados no estén en la misma ruta y de un error de duplicación de funciones y variables.
+
+Para setear el debugger de ts en vscode: https://youtu.be/d56mG7DezGs?t=1050
